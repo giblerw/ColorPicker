@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		580612222149A07C001FA920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580612212149A07C001FA920 /* AppDelegate.swift */; };
-		580612242149A07C001FA920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580612232149A07C001FA920 /* ViewController.swift */; };
+		580612242149A07C001FA920 /* ColorPresenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580612232149A07C001FA920 /* ColorPresenterVC.swift */; };
 		580612272149A07D001FA920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580612252149A07D001FA920 /* Main.storyboard */; };
 		580612292149A07F001FA920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580612282149A07F001FA920 /* Assets.xcassets */; };
 		5806122C2149A07F001FA920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5806122A2149A07F001FA920 /* LaunchScreen.storyboard */; };
+		580612342149A816001FA920 /* ColorPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580612332149A816001FA920 /* ColorPickerVC.swift */; };
+		58635E512149ABD500925B38 /* ColorTransferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58635E502149ABD500925B38 /* ColorTransferDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5806121E2149A07C001FA920 /* Protocol Color-Magic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Protocol Color-Magic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		580612212149A07C001FA920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		580612232149A07C001FA920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		580612232149A07C001FA920 /* ColorPresenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPresenterVC.swift; sourceTree = "<group>"; };
 		580612262149A07D001FA920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		580612282149A07F001FA920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5806122B2149A07F001FA920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5806122D2149A07F001FA920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580612332149A816001FA920 /* ColorPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerVC.swift; sourceTree = "<group>"; };
+		58635E502149ABD500925B38 /* ColorTransferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTransferDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				580612212149A07C001FA920 /* AppDelegate.swift */,
-				580612232149A07C001FA920 /* ViewController.swift */,
+				580612232149A07C001FA920 /* ColorPresenterVC.swift */,
 				580612252149A07D001FA920 /* Main.storyboard */,
 				580612282149A07F001FA920 /* Assets.xcassets */,
 				5806122A2149A07F001FA920 /* LaunchScreen.storyboard */,
 				5806122D2149A07F001FA920 /* Info.plist */,
+				580612332149A816001FA920 /* ColorPickerVC.swift */,
+				58635E502149ABD500925B38 /* ColorTransferDelegate.swift */,
 			);
 			path = "Protocol Color-Magic";
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580612242149A07C001FA920 /* ViewController.swift in Sources */,
+				580612242149A07C001FA920 /* ColorPresenterVC.swift in Sources */,
+				58635E512149ABD500925B38 /* ColorTransferDelegate.swift in Sources */,
+				580612342149A816001FA920 /* ColorPickerVC.swift in Sources */,
 				580612222149A07C001FA920 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JB4UT3447V;
 				INFOPLIST_FILE = "Protocol Color-Magic/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.westongibler.Protocol-Color-Magic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JB4UT3447V;
 				INFOPLIST_FILE = "Protocol Color-Magic/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.westongibler.Protocol-Color-Magic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
